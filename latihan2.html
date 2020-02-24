@@ -1,0 +1,84 @@
+
+<html>
+<head>
+<title>Kalkulator Sederhana</title>
+</head>
+<body>
+<h1>Kalkulator</h1>
+<SCRIPT LANGUAGEe="JavaScript">
+window. alert("isi kolom dengan angka!");
+document.write("Dimodifikasi terakhir pada "+ document.lastModified);
+//<!-
+function tambah()
+{
+a=eval(form.a.value)
+b=eval(form.b.value)
+c=a+b
+form.hasil.value=c
+}
+
+function kurang()
+{
+a=eval(form.a.value)
+b=eval(form.b.value)
+c=a-b
+form.hasil.value=c	
+}
+
+function kali()
+{
+a=eval(form.a.value)
+b=eval(form.b.value)
+c=a*b
+form.hasil.value=c
+}
+
+function bagi()
+{
+a=eval(form.a.value)
+b=eval(form.b.value)
+c=a/b
+form.hasil.value=c
+}
+function kosong()
+{
+form.a.focus()
+form.a.value=""
+form.b.value=""
+form.hasil.value
+}
+//->
+</Script>
+<body background="calc.jpg">
+<form name="form">
+<table border="1" cellspacing="1" cellpadding="1">
+<tr>
+</tr>
+<tr>
+<td><b>Bilangan 1</b></td>
+<td>=</td>
+<td width="100"><input type="text" name="a" size="10"></td>
+</tr>
+</tr>
+<tr>
+<td><b>Bilangan 2</b></td>
+<td>=</td>
+<td width="100"><input type="text" name="b" size="10"></td>
+</tr>
+<tr>
+<td><b>Hasil</b></td>
+<td>=</td>
+<td width="100"><input type="text" name="hasil" disabled="true" size="10"></td>
+</tr>
+<tr>
+<td colspan="3" align="center">
+<input type="button" value="+" onClick="tambah()"/> <!- tombol penjumlahan ->
+<input type="button" value="-" onClick="kurang()"/> <!- tombol pengurangan ->
+<input type="button" value="x" onClick="kali()"/> <!- tombol perkalian ->
+<input type="button" value="/" onClick="bagi()"/> <!- tombol pembagian ->
+<input type="reset" value="reset" onClick="reset()"/> <!- tombol reset ->
+</tr>
+</td>
+</form>
+</body>
+</html>
